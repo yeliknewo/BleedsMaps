@@ -14,7 +14,8 @@
     <Settings>
         <Custom id="BleedsMaps">
             <Items>
-                <Component>BleedsMapsComponent</Component>
+                <Component>BleedsMapsCompSql</Component>
+                <Component>BleesMapsCompLua</Component>
             </Items>
         </Custom>
     </Settings>
