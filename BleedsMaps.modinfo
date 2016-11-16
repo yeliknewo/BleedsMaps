@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="79a86bee-c255-45b4-ae34-5261c1154f20">
+    <Properties>
+        <Name>BleedsMaps</Name>
+        <Stability>Beta</Stability>
+        <Teaser>More Map Scripts</Teaser>
+        <Description>More Map Scripts</Description>
+        <Authors>IBleedTheFifth</Authors>
+    </Properties>
+    <Files>
+        <File>Rules.sql</File>
+    </Files>
+    <Settings>
+        <Custom id="BleedsMaps">
+            <Items>
+                <Component>BleedsMapsComponent</Component>
+            </Items>
+        </Custom>
+    </Settings>
+    <Components>
+        <UpdateDatabase id="BleedsMapsComponent">
+            <Properties>
+                <Name>BleedsMaps</Name>
+            </Properties>
+            <Items>
+                <File>Rules.sql</File>
+            </Items>
+        </UpdateDatabase>
+    </Components>
+</Mod>
