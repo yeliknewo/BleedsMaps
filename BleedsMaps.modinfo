@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="79a86bee-c255-45b4-ae34-5261c1154f20">
+<Mod id="db1fb949-a195-49fe-86af-5b20908c4ad1">
     <Properties>
         <Name>BleedsMaps</Name>
         <Stability>Beta</Stability>
@@ -9,6 +9,7 @@
     </Properties>
     <Files>
         <File>Rules.sql</File>
+        <File>Mirror.lua</File>
     </Files>
     <Settings>
         <Custom id="BleedsMaps">
@@ -18,7 +19,7 @@
         </Custom>
     </Settings>
     <Components>
-        <UpdateDatabase id="BleedsMapsComponent">
+        <UpdateDatabase id="BleedsMapsCompSql">
             <Properties>
                 <Name>BleedsMaps</Name>
             </Properties>
@@ -26,5 +27,10 @@
                 <File>Rules.sql</File>
             </Items>
         </UpdateDatabase>
+        <ImportFiles id="BleedsMapCompLua">
+            <Items>
+                <File>Mirror.lua</File>
+            </Items>
+        </ImportFiles>
     </Components>
 </Mod>
